@@ -1,4 +1,4 @@
-arrayToSort = [2, 3, 4,1]
+arrayToSort = input("array: ")
 
 
 def bubbleSort(array):

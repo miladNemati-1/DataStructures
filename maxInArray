@@ -1,0 +1,14 @@
+arr = [2]
+
+
+def maxinarray(array):
+    maximum = array[0]
+    if len(array) < 2:
+        return maximum
+    for i in range(len(array)):
+        if maximum < array[i]:
+            maximum = array[i]
+    return maximum
+
+
+print(maxinarray(arr))
