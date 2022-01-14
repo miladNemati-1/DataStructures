@@ -1,11 +1,11 @@
-arr = [2]
+arr = [2, 3, 2, 1, 2, 32, 3, 2, 43, 53, 344]
 
 
 def maxinarray(array):
     maximum = array[0]
     if len(array) < 2:
         return maximum
-    for i in range(len(array)):
+    for i in range(1, len(array)):
         if maximum < array[i]:
             maximum = array[i]
     return maximum
