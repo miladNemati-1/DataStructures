@@ -13,3 +13,46 @@ Explanation:
 """
 
 
+"""
+[17,18,5,4,6,1]
+
+
+class Solution:
+    def replaceElements(self, arr: List[int]) -> List[int]:
+        max=arr[len(arr)-1]
+        arr[len(arr)-1]=-1
+        for i in range(len(arr)-2,-1,-1):
+            temp=arr[i]
+            arr[i]=max
+            if temp>max:
+                max=temp
+            
+            
+        return arr
+
+
+"""
+
+def findGreatestToRight(arr):
+    list.reverse(arr)
+    temArr = []
+    for i in range(len(arr)):
+        arr.pop()
+        if len(arr) != 0:
+            a = max(arr)
+            temArr.append(a)
+    temArr.append(-1)
+    arr += temArr
+
+    return temArr
+
+
+
+
+print(findGreatestToRight([17,18,5,4,6,1]))
+
+#[1,6,4,5,18,17]
+
+
+
+
