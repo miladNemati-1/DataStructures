@@ -61,6 +61,7 @@ class RandomizedSet:
             return False
 
         last_value = self.list[-1]
+
         index = self.set[val]
 
         self.list[index] = last_value
